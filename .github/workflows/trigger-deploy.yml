@@ -1,0 +1,23 @@
+name: 'GitHub Pages Trigger'
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  OWNER: '${{ github.repository_owner }}'
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    name: 'TRIGGER'
+    steps:
+      - name: 'gh-pages.yml'
+        uses: convictional/trigger-workflow-and-wait@v1.6.5
+        with:
+          owner: '${{ env.OWNER }}'
+          repo: 'site'
+          github_token: '${{ secrets.BOT_PAGES_TOKEN }}'
+          github_user: '${{ secrets.BOT_PAGES_NAME }}'
+          workflow_file_name: 'gh-pages.yml'
