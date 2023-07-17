@@ -1,5 +1,3 @@
 ---
-title: 'Home'
+title: 'Russian support community for Flarum'
 ---
-
-asasas
