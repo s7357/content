@@ -3,7 +3,7 @@
 ## Install
 
 ```sh
-$m='content'; git submodule add "https://github.com/site-0002/${m}.git" "${m}"
+m='content'; git submodule add "https://github.com/site-0002/${m}.git" "${m}"
 ```
 
 ## Update
@@ -15,5 +15,5 @@ git submodule update --recursive --remote --merge
 ## Uninstall
 
 ```sh
-$m='content'; git submodule deinit -f "${m}"; git rm -r --cached "${m}"; rm -rf ".git/modules/${m}"; rm -rf "${m}"
+m='content'; git submodule deinit -f "${m}"; git rm -r --cached "${m}"; rm -rf ".git/modules/${m}"; rm -rf "${m}"
 ```
