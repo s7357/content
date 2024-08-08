@@ -3,7 +3,7 @@
 ## Install
 
 ```sh
-m='content'; git submodule add "https://github.com/site-0002/${m}.git" "${m}"
+m='content'; git submodule add "https://github.com/s7357/${m}.git" "${m}"
 ```
 
 ## Update
